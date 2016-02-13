@@ -2,7 +2,161 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	x:Class="MoviesDemo.Forms.MovieDetailView"
-	BindingContext="{x:DynamicResource ViewModelLocatorForms.MovieDetail}">
+	BindingContext="{x:DynamicResource ViewModelLocatorForms.MovieDetail}" 
+	Title="Movies Demo">
 	<ContentPage.Content>
+		<Grid Padding="0,0,0,0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"></RowDefinition>
+				<RowDefinition Height="Auto"></RowDefinition>
+				<RowDefinition Height="*"></RowDefinition>
+			</Grid.RowDefinitions>
+
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="5"></ColumnDefinition>
+				<ColumnDefinition Width="40*"></ColumnDefinition>
+				<ColumnDefinition Width="60*"></ColumnDefinition>
+				<ColumnDefinition Width="5"></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+
+			<StackLayout Padding="15,15,15,15"
+				Grid.ColumnSpan="4"
+				Grid.Row="0"
+				BackgroundColor="{DynamicResource BackTitleDetail}">
+
+				<Label Text="{Binding Movie.Title}"
+					HorizontalOptions="Center"
+					HorizontalTextAlignment="Center"
+					Style="{DynamicResource TitleDetailText}">
+				</Label>
+
+			</StackLayout>
+
+
+
+			<Image Source="{Binding Movie.Poster}"
+				Grid.Row="1"
+				Grid.Column="1" ></Image>
+
+
+
+			<Grid Grid.Row="1" Grid.Column="2">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"></RowDefinition>
+					<RowDefinition Height="Auto"></RowDefinition>
+					<RowDefinition Height="Auto"></RowDefinition>
+					<RowDefinition Height="Auto"></RowDefinition>
+					<RowDefinition Height="Auto"></RowDefinition>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="33*"></ColumnDefinition>
+					<ColumnDefinition Width="67*"></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+
+
+				<Label Text="Genre:"
+					Grid.Row="0"
+					Grid.Column="0"
+					Style="{DynamicResource FieldText}"
+					HorizontalOptions="Start"
+					VerticalOptions="Start"></Label>
+				
+				<Label Text="{Binding Movie.Genre}"
+					Grid.Row="0"
+					Grid.Column="1"
+					Style="{DynamicResource SmallText}"
+					HorizontalOptions="Start"
+					VerticalOptions="Start"></Label>
+
+
+
+				<Label Text="Director:"
+					Grid.Row="1"
+					Grid.Column="0"
+					Style="{DynamicResource FieldText}"
+					HorizontalOptions="Start"
+					VerticalOptions="Start"></Label>
+				
+				<Label Text="{Binding Movie.Director}"
+					Grid.Row="1"
+					Grid.Column="1"
+					Style="{DynamicResource SmallText}"
+					HorizontalOptions="Start"
+					VerticalOptions="Start"></Label>
+
+
+
+				<Label Text="Cast:"
+					Grid.Row="2"
+					Grid.Column="0"
+					Style="{DynamicResource FieldText}"
+					HorizontalOptions="Start"
+					VerticalOptions="Start"></Label>
+				
+				<Label Text="{Binding Movie.Cast}"
+					Grid.Row="2"
+					Grid.Column="1"
+					Style="{DynamicResource SmallText}"
+					HorizontalOptions="Start"
+					VerticalOptions="Start"
+					LineBreakMode="WordWrap"></Label>
+
+
+				<Label Text="Release Date:"
+					Grid.Row="3"
+					Grid.Column="0"
+					Style="{DynamicResource FieldText}"
+					HorizontalOptions="Start"
+					VerticalOptions="Start"></Label>
+				
+				<Label Text="{Binding Movie.RelaseDate}"
+					Grid.Row="3"
+					Grid.Column="1"
+					Style="{DynamicResource SmallText}"
+					HorizontalOptions="Start"
+					VerticalOptions="Start"
+					LineBreakMode="WordWrap"></Label>
+
+
+				<Label Text="Run Time:"
+					Grid.Row="4"
+					Grid.Column="0"
+					Style="{DynamicResource FieldText}"
+					HorizontalOptions="Start"
+					VerticalOptions="Start"></Label>
+				
+				<Label Text="{Binding Movie.Runtime}"
+					Grid.Row="4"
+					Grid.Column="1"
+					Style="{DynamicResource SmallText}"
+					HorizontalOptions="Start"
+					VerticalOptions="Start"
+					LineBreakMode="WordWrap"></Label>
+			</Grid>
+
+
+			<Grid Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"></RowDefinition>
+					<RowDefinition Height="*"></RowDefinition>
+				</Grid.RowDefinitions>
+
+				<Label Text="Sypnosis"
+					Grid.Row="0"
+					Style="{DynamicResource NameStyle}"
+					HorizontalOptions="Start"
+					VerticalOptions="Start"></Label>
+				
+				<Label Text="{Binding Movie.Description}"
+					Grid.Row="1"
+					Style="{DynamicResource SmallText}"
+					HorizontalOptions="Start"
+					VerticalOptions="Start"
+					LineBreakMode="WordWrap"></Label>
+
+			</Grid>
+
+		</Grid>
+
 	</ContentPage.Content>
 </ContentPage>

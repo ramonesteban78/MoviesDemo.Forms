@@ -7,7 +7,6 @@ using Xamarin.UITest.Queries;
 
 namespace MoviesDemo.Forms.UITests
 {
-	[TestFixture (Platform.Android)]
 	[TestFixture (Platform.iOS)]
 	public class Tests
 	{
@@ -26,12 +25,14 @@ namespace MoviesDemo.Forms.UITests
 		}
 
 		[Test]
-		public void WelcomeTextIsDisplayed ()
+		public void TestMoviesDemo ()
 		{
-			AppResult[] results = app.WaitForElement (c => c.Marked ("Welcome to Xamarin Forms!"));
-			app.Screenshot ("Welcome screen.");
-
-			Assert.IsTrue (results.Any ());
+			app.ScrollDown();
+			app.Tap(x => x.Class("Xamarin_Forms_Platform_iOS_LabelRenderer").Index(3));
+			app.Screenshot("Tapped on view Xamarin_Forms_Platform_iOS_LabelRenderer");
+			app.Tap(x => x.Text("Movies Demo"));
+			app.Screenshot("Tapped on view UILabel with Text: 'Movies Demo'");
+			Assert.IsTrue (true);
 		}
 	}
 }

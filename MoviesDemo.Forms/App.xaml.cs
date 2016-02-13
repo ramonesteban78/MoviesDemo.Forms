@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
-using MoviesDemo.ViewModels;
+using MoviesDemo.Core.ViewModels;
 
 namespace MoviesDemo.Forms
 {
@@ -16,7 +16,7 @@ namespace MoviesDemo.Forms
 		{
 			get
 			{
-				return _locator ?? (_locator = new ViewModelLocatorForms());
+				return _locator ?? (_locator = new ViewModelLocatorForms ());
 			}
 		}
 
@@ -25,18 +25,12 @@ namespace MoviesDemo.Forms
 		{
 			InitializeComponent (); 
 
-			// The root page of your application
-			MainPage = new ContentPage {
-				Content = new StackLayout {
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							HorizontalTextAlignment = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
+
+			// TODO: 8. Set the main page of the app as a NavigationPage of the MovieDetailView
+			var movies = new NavigationPage(new MoviesView());
+			_locator.NavigationServiceInit (movies);
+			MainPage = movies;
+
 		}
 
 		protected override void OnStart ()

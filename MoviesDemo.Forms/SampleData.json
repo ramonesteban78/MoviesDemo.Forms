@@ -1,0 +1,69 @@
+{
+	"MovieTemplate.xaml": {
+		"Id":3, 
+		"Title": "45 Years esto es una prueba de un texto de longitud apreciable", 
+		"Runtime":"2:11", 
+		"RelaseDate": "2015-12-23",
+		"Director": "Andrew Haigh",
+		"Description": "The winner of the Silver Bear for Best Actress (Charlotte Rampling) and Best Actor (Tom Courtenay) at the Berlin International Film Festival, Andrew Haigh’s (Weekend, Looking) film is a moving and profound look at marriage and the secrets we keep. There is just one week until Kate Mercer’s (Rampling) 45th wedding anniversary, and the planning for the party is going well. But then a letter arrives for her husband (Courtenay). The body of his first love has been discovered, frozen and preserved in the icy glaciers of the Swiss Alps. By the time the party is upon them, five days later, there may not be a marriage left to celebrate.",
+		"Poster": "http://trailers.apple.com/trailers/ifcfilms/45years/images/poster.jpg",
+		"LargePoster": "http://trailers.apple.com/trailers/ifcfilms/45years/images/poster-xlarge.jpg",
+		"Genre": "Drama",
+		"Cast": "Charlotte Rampling"
+	},
+	"MoviesView.xaml":{ 
+		"Movies": [
+			{  
+				"Id":1, 
+				"Title": "10 Cloverfield Lane", 
+				"Runtime":"1:42", 
+				"RelaseDate": "2016-03-11",
+				"Director": "Dan Trachtenberg",
+				"Description": "No synopsis at this time",
+				"Poster": "http://trailers.apple.com/trailers/paramount/10cloverfieldlane/images/poster.jpg",
+				"LargePoster": "http://trailers.apple.com/trailers/paramount/10cloverfieldlane/images/poster-xlarge.jpg",
+				"Genre": "Drama",
+				"Cast": "John Goodman"
+			},
+			{  
+				"Id":2, 
+				"Title": "13 Hours", 
+				"Runtime":"2:15", 
+				"RelaseDate": "2016-01-15",
+				"Director": "Michael Bay",
+				"Description": "Based on the book 13 Hours: The Inside Account of What Really Happened in Benghazi.",
+				"Poster": "http://trailers.apple.com/trailers/paramount/13hours/images/poster.jpg",
+				"LargePoster": "http://trailers.apple.com/trailers/paramount/13hours/images/poster-xlarge.jpg",
+				"Genre": "Action and Adventure",
+				"Cast": "John Krasinski"
+			},
+			{  
+				"Id":3, 
+				"Title": "45 Years", 
+				"Runtime":"2:11", 
+				"RelaseDate": "2015-12-23",
+				"Director": "Andrew Haigh",
+				"Description": "The winner of the Silver Bear for Best Actress (Charlotte Rampling) and Best Actor (Tom Courtenay) at the Berlin International Film Festival, Andrew Haigh’s (Weekend, Looking) film is a moving and profound look at marriage and the secrets we keep. There is just one week until Kate Mercer’s (Rampling) 45th wedding anniversary, and the planning for the party is going well. But then a letter arrives for her husband (Courtenay). The body of his first love has been discovered, frozen and preserved in the icy glaciers of the Swiss Alps. By the time the party is upon them, five days later, there may not be a marriage left to celebrate.",
+				"Poster": "http://trailers.apple.com/trailers/ifcfilms/45years/images/poster.jpg",
+				"LargePoster": "http://trailers.apple.com/trailers/ifcfilms/45years/images/poster-xlarge.jpg",
+				"Genre": "Drama",
+				"Cast": "Charlotte Rampling"
+			}
+		],
+		"IsLoading": "true"
+	},
+	"MovieDetailView.xaml": {
+		"Movie": {
+				"Id":3, 
+				"Title": "45 Years", 
+				"Runtime":"2:11", 
+				"RelaseDate": "2015-12-23",
+				"Director": "Andrew Haigh",
+				"Description": "The winner of the Silver Bear for Best Actress (Charlotte Rampling) and Best Actor (Tom Courtenay) at the Berlin International Film Festival, Andrew Haigh’s (Weekend, Looking) film is a moving and profound look at marriage and the secrets we keep. There is just one week until Kate Mercer’s (Rampling) 45th wedding anniversary, and the planning for the party is going well. But then a letter arrives for her husband (Courtenay). The body of his first love has been discovered, frozen and preserved in the icy glaciers of the Swiss Alps. By the time the party is upon them, five days later, there may not be a marriage left to celebrate.",
+				"Poster": "http://trailers.apple.com/trailers/ifcfilms/45years/images/poster.jpg",
+				"LargePoster": "http://trailers.apple.com/trailers/ifcfilms/45years/images/poster-xlarge.jpg",
+				"Genre": "Drama",
+				"Cast": "Charlotte Rampling, Tom Courtenay, John Krasinski, Pablo Schreiber, Domicnic Fumusa"
+		}
+	},
+}

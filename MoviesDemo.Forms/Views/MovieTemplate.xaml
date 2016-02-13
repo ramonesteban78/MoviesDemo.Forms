@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+			xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			x:Class="MoviesDemo.Forms.MovieTemplate">
+	<ContentView.Content>
+		<StackLayout Spacing="0" Padding="0">
+			<Grid Style="{DynamicResource CardStyle}">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="60"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="30"/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="60"></RowDefinition>
+					<RowDefinition Height="*"></RowDefinition>
+				</Grid.RowDefinitions>
+
+				<Image Source="{Binding Poster}" 
+					Grid.Column="0" 
+					Grid.RowSpan="2"></Image>
+
+				<Label Text="{Binding Title}" 
+					Style="{DynamicResource NameStyle}"
+					Grid.Column="1" 
+					Grid.ColumnSpan="2" 
+					Grid.Row="0"
+					HorizontalOptions="FillAndExpand" 
+					VerticalOptions="FillAndExpand" 
+					VerticalTextAlignment="Start" 
+					HorizontalTextAlignment="Start"></Label>
+
+				<Label Text="{Binding Director}" 
+					Style="{DynamicResource SmallText}"
+					Grid.Row="1" 
+					Grid.Column="1"></Label>
+
+				<Label Text="{Binding Runtime}" 
+					Grid.Row="1" 
+					Grid.Column="2"
+					Style="{DynamicResource SmallText}"
+					HorizontalTextAlignment="End"></Label>
+			</Grid>
+
+		</StackLayout>
+	</ContentView.Content>
+</ContentView>

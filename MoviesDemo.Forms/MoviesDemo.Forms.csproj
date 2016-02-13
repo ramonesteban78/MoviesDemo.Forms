@@ -42,6 +42,9 @@
     </Compile>
     <Compile Include="ViewModelLocatorForms.cs" />
     <Compile Include="Services\NavigationService.cs" />
+    <Compile Include="Views\MovieTemplate.xaml.cs">
+      <DependentUpon>MovieTemplate.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.0.1.6505\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.0.1.6505\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -67,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="SampleData.json" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml">
@@ -78,15 +82,18 @@
     <EmbeddedResource Include="Views\MovieDetailView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Step 9 - Pasos finales\MoviesDemo\MoviesDemo.csproj">
-      <Project>{10CD6270-D1AC-44AD-AD71-C828C089D4A4}</Project>
-      <Name>MoviesDemo</Name>
-    </ProjectReference>
+    <EmbeddedResource Include="Views\MovieTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MoviesDemo.Core\MoviesDemo.Core.csproj">
+      <Project>{10CD6270-D1AC-44AD-AD71-C828C089D4A4}</Project>
+      <Name>MoviesDemo.Core</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -74,12 +74,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MoviesDemo.Forms\MoviesDemo.Forms.csproj">
-      <Project>{A17E59C1-8431-4227-A6B6-973BADFDA4BE}</Project>
-      <Name>MoviesDemo.Forms</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,4 +96,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.0.1.6505\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.0.1.6505\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <ItemGroup>
+    <ProjectReference Include="..\MoviesDemo.Forms\MoviesDemo.Forms.csproj">
+      <Project>{A17E59C1-8431-4227-A6B6-973BADFDA4BE}</Project>
+      <Name>MoviesDemo.Forms</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

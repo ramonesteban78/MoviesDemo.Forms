@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesDemo.Forms.Droid", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesDemo.Forms.UITests", "UITests\MoviesDemo.Forms.UITests.csproj", "{E31A7150-21F9-41A1-BA12-BB578BF94135}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesDemo", "..\Step 9 - Pasos finales\MoviesDemo\MoviesDemo.csproj", "{10CD6270-D1AC-44AD-AD71-C828C089D4A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesDemo.Core", "..\MoviesDemo.Core\MoviesDemo.Core.csproj", "{10CD6270-D1AC-44AD-AD71-C828C089D4A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

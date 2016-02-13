@@ -5,26 +5,34 @@
 	x:Class="MoviesDemo.Forms.App">
 	<Application.Resources>
 		<ResourceDictionary>
-
-	        <local:ViewModelLocator x:Key="Locator" />
+<!--
+	        <local:ViewModelLocatorForms x:Key="Locator" />-->
 	    
-			<!---Glossy Styles-->
+			<!---Bravent Colors-->
 <!--			<Color x:Key="CardBackgroundColor">#FFFFFF</Color>
 			<Color x:Key="SearchBarBackgroundColor">#FFFFFF</Color>
-			<Color x:Key="NameColor">#D32F2F</Color>-->
+			<Color x:Key="NameColor">#689F38</Color>
+			<Color x:Key="SmallTextColor">#727272</Color>
+			<Color x:Key="BackTitleDetail">#8BC34A</Color>
+			<Color x:Key="NormalTextColor">#4CAF50</Color>
+			<Color x:Key="TitleTextColor">#FFFFFF</Color>-->
+
+			<!---Xamarin Colors-->
+			<Color x:Key="CardBackgroundColor">#FFFFFF</Color>
+			<Color x:Key="SearchBarBackgroundColor">#FFFFFF</Color>
+			<Color x:Key="NameColor">#0288D1</Color>
+			<Color x:Key="SmallTextColor">#727272</Color>
+			<Color x:Key="BackTitleDetail">#03A9F4</Color>
+			<Color x:Key="NormalTextColor">#03A9F4</Color>
+			<Color x:Key="TitleTextColor">#FFFFFF</Color>
 
 
-			<!-- Formal Style -->
-
-<!--			<Color x:Key="CardBackgroundColor">#eceff1</Color>
-			<Color x:Key="SearchBarBackgroundColor">#cfd8dc</Color>
-			<Color x:Key="NameColor">#546e7a</Color>-->
-
-<!--			<Color x:Key="EntryBackgroundColor">#7778909c</Color>
+<!--
+			<Color x:Key="EntryBackgroundColor">#7778909c</Color>-->
 
 			<Style x:Key="CardStyle" TargetType="Grid">
 				<Setter Property="HeightRequest" Value="80"/>
-				<Setter Property="Padding" Value="5,10,0,10"/>
+				<Setter Property="Padding" Value="5,10,5,10"/>
 				<Setter Property="BackgroundColor" Value="{DynamicResource CardBackgroundColor}"/>
 			</Style>
 
@@ -35,7 +43,25 @@
 				<Setter Property="FontAttributes" Value="Bold"/>
 			</Style> 
 
-			<Style x:Key="SearchStyle" TargetType="SearchBar">
+			<Style x:Key="SmallText" TargetType="Label">
+				<Setter Property="FontSize" Value="11"/>
+				<Setter Property="TextColor" Value="{DynamicResource SmallTextColor}"/>
+			</Style> 
+
+
+			<Style x:Key="TitleDetailText" TargetType="Label">
+				<Setter Property="FontSize" Value="28"/>
+				<Setter Property="TextColor" Value="{DynamicResource TitleTextColor}"/>
+				<Setter Property="FontAttributes" Value="Bold"/>
+				<Setter Property="LineBreakMode" Value="WordWrap"/>
+			</Style>
+
+			<Style x:Key="FieldText" TargetType="Label">
+				<Setter Property="FontSize" Value="11"/>
+				<Setter Property="TextColor" Value="{DynamicResource NormalTextColor}"/>
+			</Style> 
+
+<!--			<Style x:Key="SearchStyle" TargetType="SearchBar">
 				<Setter Property="BackgroundColor" Value="{DynamicResource SearchBarBackgroundColor}"/>
 			</Style> -->
 
