@@ -10,11 +10,8 @@ namespace MoviesDemo.Forms
 	{
 		public MovieTemplate ()
 		{
+			// TODO: 9. Apply design to the MovieTemplate.xaml using Gorilla Player
 			InitializeComponent ();
-//			Label lbl = new Label ();
-//			lbl.LineBreakMode = LineBreakMode.CharacterWrap;
-			Image img = new Image();
-			img.Aspect = Aspect.Fill;
 		}
 	}
 }

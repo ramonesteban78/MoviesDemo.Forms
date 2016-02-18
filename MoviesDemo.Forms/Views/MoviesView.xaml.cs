@@ -12,13 +12,12 @@ namespace MoviesDemo.Forms
 	public partial class MoviesView : ContentPage
 	{
 		private readonly MoviesViewModel _vm;
-
-		// TODO: 6. Assign the Binding Context in the xaml page MoviesView
-		// TODO: 9. Apply design to the MoviewsView.xaml using Gorilla Player
+		// TODO: 5. Assign the Binding Context in the xaml page MoviesView
+		// TODO: 8. Preparar el archivo SampleData.json para la previsualización de datos con Gorilla
+		// TODO: 10. Aplicar diseño a la vista MoviesView.xaml usando Gorilla Player
 		public MoviesView ()
 		{
 			InitializeComponent ();
-			// TODO: 10. Set the Binding Context accessing the ViewModelLocatorForms
 			_vm = App.Locator.Movies;
 			this.BindingContext = _vm;
 
@@ -29,7 +28,7 @@ namespace MoviesDemo.Forms
 
 		protected override void OnAppearing ()
 		{
-			// TODO: 11. Call the Start method on the OnAppearing event
+			// TODO: 6. Call the Start method on the OnAppearing event
 			base.OnAppearing ();
 			_vm.Start ();
 		}

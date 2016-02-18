@@ -9,7 +9,6 @@ namespace MoviesDemo.Forms
 	public partial class App : Application
 	{
 		// TODO: 4. Define the Locator as ViewModelLocator in the App class 
-		// TODO: 5. Create a Resource dictionary for the Locator in the App.xaml file
 		private static ViewModelLocatorForms _locator;
 
 		public static ViewModelLocatorForms Locator
@@ -26,7 +25,7 @@ namespace MoviesDemo.Forms
 			InitializeComponent (); 
 
 
-			// TODO: 8. Set the main page of the app as a NavigationPage of the MovieDetailView
+			// TODO: 7. Set the main page of the app as a NavigationPage of the MoviesView
 			var movies = new NavigationPage(new MoviesView());
 			_locator.NavigationServiceInit (movies);
 			MainPage = movies;
