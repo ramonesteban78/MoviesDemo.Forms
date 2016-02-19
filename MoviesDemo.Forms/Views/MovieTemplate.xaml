@@ -3,7 +3,7 @@
 			xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			x:Class="MoviesDemo.Forms.MovieTemplate">
 	<ContentView.Content>
-		<StackLayout Spacing="0" Padding="0">
+<!--		<StackLayout Spacing="0" Padding="0">
 			<Grid Style="{DynamicResource CardStyle}">
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width="60"/>
@@ -41,6 +41,6 @@
 					HorizontalTextAlignment="End"></Label>
 			</Grid>
 
-		</StackLayout>
+		</StackLayout>-->
 	</ContentView.Content>
 </ContentView>

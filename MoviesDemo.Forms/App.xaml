@@ -9,7 +9,7 @@
 	        <local:ViewModelLocatorForms x:Key="Locator" />-->
 	    
 			<!---Bravent Colors-->
-<!--			<Color x:Key="CardBackgroundColor">#FFFFFF</Color>
+<!--<Color x:Key="CardBackgroundColor">#FFFFFF</Color>
 			<Color x:Key="SearchBarBackgroundColor">#FFFFFF</Color>
 			<Color x:Key="NameColor">#689F38</Color>
 			<Color x:Key="SmallTextColor">#727272</Color>
