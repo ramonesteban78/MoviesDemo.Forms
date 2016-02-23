@@ -5,7 +5,7 @@
 	xmlns:local="clr-namespace:MoviesDemo.Forms;assembly=MoviesDemo.Forms"
 	Title="Movies Demo">
 	<ContentPage.Content>
-<!--		<Grid Padding="0,0,0,0">
+		<Grid Padding="0,0,0,0">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="*"></RowDefinition>
 				<RowDefinition Height="Auto"></RowDefinition>
@@ -35,7 +35,7 @@
 	            HorizontalOptions="Center" 
 	            BackgroundColor="Transparent"
 	            Grid.RowSpan="2" />
-		</Grid>-->
+		</Grid>
 		 
 	</ContentPage.Content>
 </ContentPage>
